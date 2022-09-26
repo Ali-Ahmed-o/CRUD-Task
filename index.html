@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="bg">
+    <div class="w-75 m-auto py-4 row  ">
+
+        <div class="form-group col-md-2 ">
+            <label for="productName" class="badge bg-light text-wrap" style="width: 5.5rem;">First name :</label>
+            <input type="text" class="form-control" id="productName">
+
+        </div>
+
+        <div class="form-group col-md-2">
+            <label for="productName" class="badge bg-light text-wrap" style="width: 5.5rem;">Last name :</label>
+            <input type="text" class="form-control" id="productLast">
+
+        </div>
+        <div class="form-group col-md-4">
+            <label for="productName" class="badge bg-light text-wrap" style="width: 4rem;">E-mail :</label>
+            <input type="email" class="form-control" id="productEmail">
+
+        </div>
+
+        <div class="form-group col-md-3 ">
+            <label for="productPrice" class="badge bg-light text-wrap" style="width: 4rem;">Phone :</label>
+            <input type="number" class="form-control" id="productPrice">
+
+        </div>
+
+        <div class="form-group col-md-4">
+            <label for="productCategory" class="badge bg-light text-wrap" style="width: 5rem;">Location :</label>
+            <input type="text" class="form-control" id="productCategory">
+
+        </div>
+
+        <div class="form-group col-md-4">
+            <label for="productDesc" class="badge bg-light text-wrap" style="width: 4rem;">Hobby :</label>
+            <input style="resize: none;" type="text" class="form-control" id="productDesc"></input>
+
+        </div>
+        <div class="control hold">
+            <button onclick="tableToCSV()" class="btn btn-primary ">Download CSV</button>
+            <button onclick="addProduct()" class="btn btn-success hold2  ">Add Item</button>
+        </div>
+    </div>
+
+
+    <div class="crud container text-white text-center mb-3 mt-3">
+        <h1>CRUD Database</h1>
+    </div>
+    <div class="w-50 m-auto p-3">
+        <input onkeyup="searchProducts(this.value)" type="text" placeholder="search" class="form-control mb-2" name=""
+            id="">
+    </div>
+
+
+    <table class="table text-center text-white w-75 m-auto py-3"  border='3'>
+            <thead>
+                <th>ID</th>
+                <th>First</th>
+                <th>Last</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Location</th>
+                <th>Hobby</th>
+                <th>Update</th>
+                <th>Delete</th>
+                <th>Confirm</th>
+            </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+
+    </table>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C831L2ESMN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FZ09HVL138');
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

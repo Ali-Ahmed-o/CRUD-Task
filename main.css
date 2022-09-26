@@ -1,0 +1,35 @@
+.hold {
+    margin-top: 26px !important;
+    margin-left: 17px;
+}
+
+.hold2 {
+    margin-left: 30px;
+}
+
+.bg {
+    background-color: rgb(0, 76, 82);
+}
+
+.table tr{
+    transition: all 0.2s;
+    
+}
+.table tr:hover {
+    
+    color: rgba(255, 255, 255, 0.553);
+    cursor:cell;
+    transform: translate(360deg);
+    transform: scale(1.012345);
+    
+}
+
+h4 {
+    font-weight: bold;
+}
+#tableBody
+{
+    border: none!important;
+    
+    
+}
